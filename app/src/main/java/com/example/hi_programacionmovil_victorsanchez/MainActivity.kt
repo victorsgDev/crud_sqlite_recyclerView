@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnLogin: Button = binding.btnLogin
         btnLogin.setOnClickListener() {
-
-            if(etUser.toString()!="" && etPsw.toString()!="")
+            println(etUser.text.toString())
+            if(etUser.text.toString()=="" && etPsw.text.toString()=="")
                 Toast.makeText(this, "Debes poner un usuario y una contraseña", Toast.LENGTH_SHORT).show()
             else{
                 val intent = Intent(this, Formulario::class.java)
