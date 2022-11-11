@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Formulario">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Añadir Productos"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="number"
+        android:outlineAmbientShadowColor="#000000"
+        android:outlineSpotShadowColor="#FFFFFF"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Nombre de producto"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etUnidades"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Unidades"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF9800"
+        android:text="Añadir producto"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF9800"
+        android:text="Mostrar productos"
+        android:textColor="#000000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_productos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+
+</LinearLayout>

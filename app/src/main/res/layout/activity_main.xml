@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_margin="15dp"
+        android:text="Usuario:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Indique su usuario..."
+        android:inputType="textPersonName"
+        android:textColor="#FF9800"
+        android:textColorHint="#FF9800" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_margin="15dp"
+        android:text="Contraseña:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etPsw"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Indique su contraseña..."
+        android:inputType="textPersonName"
+        android:textColor="#FF9800"
+        android:textColorHint="#FF9800" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="Iniciar sesión"
+        android:textColor="#000000" />
+
+</LinearLayout>
